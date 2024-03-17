@@ -1,0 +1,218 @@
+@media (min-width: 600px) and (max-width: 700px) {
+  #background {
+    top: 12vh;
+    height: 88vh;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    width: 200%;
+  }
+  
+  #conteudo{
+    font-size: 1em;
+    width: 26em;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  #background {
+    top: 12vh;
+    height: 88vh;
+  }
+
+  h1 {
+    font-size: 3em;
+    width: 200%;
+  }
+
+  p {
+    font-size: 1.5em;
+    width: 80vw;
+  }
+}
+
+@media (min-width: 801px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.5em;
+    width: 24.8em;
+  }
+
+  #background {
+    top: 12.66vh;
+    height: 87.34vh;
+  }
+}
+
+/* Imports */
+@import url(//db.onlinewebfonts.com/c/547fcb026eb30833b9696544bec8e2ac?family=Baskerville+Display+PT+Web);
+
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Por tag */
+body {
+  background-color: black;
+}
+
+h1 {
+  margin: 4vh 0 0 0;
+  text-indent: 3.3vw;
+  position: relative;
+  text-shadow: 2px 2px 2px black;
+  font-family: Baskerville Display PT Web;
+  z-index: 6;
+}
+
+h1,
+p {
+  color: white;
+  padding-left: 1vw;
+  padding-right: 10vw;
+}
+
+p {
+  margin: 0 0 0 3vh;
+  position: relative;
+  font-family: Arapey;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  z-index: 5;
+}
+
+p::first-letter {
+  text-indent: 3.5vw;
+}
+
+/* Classes */
+.lermais {
+  color: red;
+}
+
+.fadein {
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeinleft {
+  animation-name: fadeinleft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.pulso {
+  animation-name: pulso;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* IDs */
+#container {
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "main blanc";
+}
+
+#main {
+  height: 88.34vh;
+  width: 50vw;
+  grid-area: main;
+}
+
+#blanc {
+  height: 88.34vh;
+  width: 50vw;
+  grid-area: blanc;
+}
+
+#background {
+  filter: grayscale(33%);
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#text{
+    position: absolute;
+    top: 20 vh;
+    left: 0;
+  }
+
+/* Animações */
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeinleft {
+  0% {
+    transform: translateX(-3vw);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateX(0vw);
+    opacity: 100%;
+  }
+}
+
+@keyframes pulso {
+  0% {
+    opacity: 65%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  55% {
+    opacity: 61%;
+  }
+
+  70% {
+    opacity: 55%;
+  }
+
+  100% {
+    opacity: 65%;
+  }
+}
+
+#fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('Imagens/Door_Index.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 1s ease-out;
+}
+
+#content {
+  display: none;
+  position: relative;
+  z-index: 999;
+}

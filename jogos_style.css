@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+
+  /* Mobile */
+  .titulo {
+    font-size: 1.5em;
+  }
+
+  .descricao {
+    font-size: 1.2em;
+  }
+
+  /* Por tag */
+  body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    padding-bottom: 10vw;
+    position: relative;
+    top: -18vh;
+    font-size: 1.1em;
+  }
+
+
+  /* IDs */
+  #main {
+    position: relative;
+    top: 12vh;
+    height: 184.36vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 12vw;
+  }
+
+  #titulo1,
+  #titulo2,
+  #titulo3,
+  #titulo4 {
+    position: relative;
+    left: 0;
+    top: -105vh;
+    font-size: 3em;
+  }
+
+  #imagem1,
+  #imagem2,
+  #imagem3,
+  #imagem4 {
+    margin-right: 2vh;
+    margin-bottom: 3vh;
+  }
+
+  #imagem1 {
+    grid-area: imagem1;
+    margin-top: 3vh;
+  }
+
+  #imagem1>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem2 {
+    grid-area: imagem2;
+  }
+
+  #imagem2>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem3 {
+    grid-area: imagem3;
+  }
+
+  #imagem3>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem4 {
+    grid-area: imagem3;
+  }
+
+  #imagem4>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #texto1,
+  #texto2,
+  #texto3,
+  #texto4 {
+    text-align: left;
+  }
+
+  #texto1 {
+    margin-top: 3vh;
+    grid-area: texto1;
+  }
+
+  #texto2 {
+    grid-area: texto2;
+  }
+
+  #texto3 {
+    grid-area: texto3;
+  }
+
+  #texto4 {
+    grid-area: texto3;
+  }
+
+  /* Classes */
+
+  .quebra1 {
+    display: block;
+  }
+
+  .quebra2 {
+    display: block;
+    position: relative;
+    top: 7vh;
+  }
+
+  .quebra3 {
+    display: block;
+    position: relative;
+    top: 14vh;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+
+  /* Tablet */
+  /* Por tag */
+  body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    padding-bottom: 10vw;
+    position: relative;
+    top: -18vh;
+    font-size: 1.1em;
+  }
+
+
+  /* IDs */
+  #main {
+    position: relative;
+    top: 7vh;
+    height: 184.36vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 12vw;
+  }
+
+  #titulo1 {
+    width: 600px;
+    position: relative;
+    left: 1vw;
+    top: -92vh;
+    font-size: 3.3em;
+  }
+
+  #titulo2,
+  #titulo3,
+  #titulo4 {
+    width: 600px;
+    position: relative;
+    left: 0;
+    top: -88vh;
+    font-size: 3.3em;
+  }
+
+  #imagem1,
+  #imagem2,
+  #imagem3,
+  #imagem4 {
+    margin-right: 2vh;
+    margin-bottom: 8vh;
+  }
+
+  #imagem1 {
+    grid-area: imagem1;
+    margin-top: 3vh;
+  }
+
+  #imagem1>img {
+    height: 55vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem2 {
+    grid-area: imagem2;
+  }
+
+  #imagem2>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem3 {
+    grid-area: imagem3;
+  }
+
+  #imagem3>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #imagem4 {
+    grid-area: imagem3;
+  }
+
+  #imagem4>img {
+    height: 49vw;
+    width: 80vw;
+    border-radius: 13px;
+  }
+
+  #texto1,
+  #texto2,
+  #texto3,
+  #texto4 {
+    text-align: left;
+  }
+
+  #texto1 {
+    margin-top: 3vh;
+    grid-area: texto1;
+  }
+
+  #texto2 {
+    grid-area: texto2;
+  }
+
+  #texto3 {
+    grid-area: texto3;
+  }
+
+  #texto4 {
+    grid-area: texto3;
+  }
+
+  /* Classes */
+
+  .quebra1,
+  .quebra2,
+  .quebra3 {
+    font-size: 1.3em;
+  }
+
+  .quebra1 {
+    display: block;
+  }
+
+  .quebra2 {
+    display: block;
+    position: relative;
+    top: 6vh;
+  }
+
+  .quebra3 {
+    display: block;
+    position: relative;
+    top: 12vh;
+  }
+}
+
+@media (min-width: 801px) {
+
+  /* Desktop */
+  .titulo {
+    font-size: 3.5em;
+  }
+
+  .descricao {
+    font-size: 1.4em;
+  }
+
+
+  /* Por tag */
+  body {
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* IDs */
+  #main {
+    height: 190.36vh;
+    background-color: black;
+    color: white;
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+      "imagem1 texto1"
+      "imagem2 texto2"
+      "imagem3 texto3"
+      "imagem4 texto4";
+    row-gap: 10vh;
+  }
+
+  #titulo1,
+  #titulo2,
+  #titulo3,
+  #titulo4 {
+    font-size: 3.5em;
+  }
+
+  #imagem1,
+  #imagem2,
+  #imagem3,
+  #imagem4 {
+    height: 40vw;
+    width: 40vw;
+    margin-right: 2vh;
+    margin-bottom: 3vh;
+  }
+
+  #imagem1 {
+    grid-area: imagem1;
+    margin-top: 3vh;
+  }
+
+  #imagem1>img {
+    border-radius: 13px;
+    height: 37vw;
+    width: 37vw;
+    margin-left: 3vw;
+  }
+
+  #imagem2 {
+    grid-area: imagem2;
+  }
+
+  #imagem2>img {
+    border-radius: 13px;
+    height: 37vw;
+    width: 37vw;
+    margin-left: 3vw;
+  }
+
+  #imagem3 {
+    grid-area: imagem3;
+  }
+
+  #imagem3>img {
+    border-radius: 13px;
+    height: 37vw;
+    width: 37vw;
+    margin-left: 3vw;
+  }
+
+  #imagem4 {
+    grid-area: imagem4;
+  }
+
+  #imagem4>img {
+    border-radius: 13px;
+    height: 37vw;
+    width: 37vw;
+    margin-left: 3vw;
+  }
+
+  #texto1,
+  #texto2,
+  #texto3,
+  #texto4 {
+    width: 55vw;
+    height: 40vw;
+    text-align: center;
+  }
+
+  #texto1 {
+    margin-top: 3vh;
+    grid-area: texto1;
+  }
+
+  #texto2 {
+    grid-area: texto2;
+  }
+
+  #texto3 {
+    grid-area: texto3;
+  }
+
+  #texto4 {
+    grid-area: texto4;
+  }
+
+  /* Classes */
+  .img-container {
+    height: 37vw;
+    width: 37vw;
+    overflow: hidden;
+    border: 2px solid #000;
+  }
+
+  .img-container>img {
+    height: 37vw;
+    width: 37vw;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+  }
+
+  .img-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .segredo {
+    color: black;
+  }
+}

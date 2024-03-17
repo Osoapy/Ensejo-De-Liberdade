@@ -1,0 +1,43 @@
+@media (min-width: 600px) and (max-width: 700px) {
+  #texto {
+    /*color: crimson;*/
+    font-size: 15.5px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+  #texto {
+    /*color: aqua;*/
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 801px) {
+  #texto {
+    /*color: chocolate;*/
+    font-size: 25px;
+  }
+}
+
+.invisivel {
+  color: black;
+}
+
+h1 {
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
